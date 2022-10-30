@@ -73,7 +73,7 @@ a, b, c = 1, 2, 3
 ```
 
 ## 5. Логические операции
-+ >, >=, <, <=, ==, !=
++ \>, >=, <, <=, ==, !=
 + not, and, or – не путать с &, |, ^
 + is, is not, in, not in
 
@@ -108,3 +108,31 @@ while original != 0:
 print(inverted)
 ```
 
+### 7a. *Управляющие конструкции: while-else*
+```
+while condition:
+    # operator 1
+    # operator 2
+    # . . .
+    # operator n
+else:
+    # operator n + 1
+    # operator n + 2
+    # . . .
+    # operator n + m
+```
+Например:
+```
+original = 23
+inverted = 0
+while original != 0:
+    inverted = inverted * 10 + (original % 10)
+    original //= 10
+else:
+    print('Пожалуй')
+    print('хватит )')
+    print(inverted)
+# Пожалуй
+# хватит )
+# 32
+```
